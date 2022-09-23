@@ -78,9 +78,34 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: ruota;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ruota{
+    0%{
+        transform: rotate(10turn);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation-name: ruota2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes ruota2{
+    0%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
